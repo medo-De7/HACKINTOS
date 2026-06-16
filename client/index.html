@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HACKINTOS - Cyber Terminal</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="title">HACKINTOS v1.0</div>
+    <div class="status">● ONLINE</div>
+  </div>
+
+  <div class="address-bar">
+    <input id="address" placeholder="https://example.com" />
+    <button id="goBtn">GO</button>
+  </div>
+
+  <div class="layout">
+    <div class="viewer">
+      <div class="viewer-header">HTML VIEWER</div>
+      <iframe id="viewerFrame" sandbox="allow-scripts allow-forms" srcdoc=""></iframe>
+    </div>
+
+    <div class="sidebar">
+      <div class="tabs">
+        <button data-tab="console" class="active">Console</button>
+        <button data-tab="network">Network</button>
+        <button data-tab="headers">Headers</button>
+        <button data-tab="response">Response</button>
+        <button data-tab="storage">Storage</button>
+        <button data-tab="cookies">Cookies</button>
+      </div>
+      <div id="panels">
+        <div class="panel" data-panel="console">Console logs will appear here.</div>
+        <div class="panel hidden" data-panel="network">Network inspector.</div>
+        <div class="panel hidden" data-panel="headers">Headers</div>
+        <div class="panel hidden" data-panel="response">Response body</div>
+        <div class="panel hidden" data-panel="storage">Local / Session storage</div>
+        <div class="panel hidden" data-panel="cookies">Cookies</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="/assets/js/httpClient.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
