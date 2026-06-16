@@ -160,13 +160,3 @@ Feel free to submit improvements, bug fixes, or new features via Pull Requests.
 MIT License
 
 See LICENSE for details.
-
-<div align="center">
-
-HACKINTOS
-
-A lightweight cyber-terminal browser built for developers.
-
-</div> ```
-
-This version is more aligned with modern GitHub repositories: concise, visually organized, easier to scan, and emphasizes the project's capabilities without overwhelming readers with long paragraphs.
